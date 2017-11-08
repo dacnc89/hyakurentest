@@ -6,7 +6,7 @@ def poker_hand(s1='',s2='',s3='',s4='',s5='')
   else
     list = [s1,s2,s3,s4,s5]
     ranks = list.map {|s| s[1..s.size]}                   
-    dup = ranks.select {|rank| ranks.count(rank) > 1
+    dup = ranks.select {|rank| ranks.count(rank) > 1}
     case dup.size
     when 0   
       output += "5 separate cards"
